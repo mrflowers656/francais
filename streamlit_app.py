@@ -3,7 +3,7 @@ import pandas as pd
 import random
 
 # 1. Configuración de la conexión (Pega aquí tu link de "Publicar en la web")
-SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT2AGLiMp7h2kwkpAz_r-VsG8k-Zvv7Pl46KrYpyLhixiCQ6_aZ1Exu8dgzbo00D99j0QZ9WKpIqgu6/pubhtml"
+SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT2AGLiMp7h2kwkpAz_r-VsG8k-Zvv7Pl46KrYpyLhixiCQ6_aZ1Exu8dgzbo00D99j0QZ9WKpIqgu6/pub?output=csv"
 
 st.title("My Flashcards App 🧠")
 
