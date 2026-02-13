@@ -16,11 +16,11 @@ df = load_data()
 df.columns = df.columns.str.strip()
 
 # 2. Selección de Categoría
-categoria_select = st.sidebar.selectbox("¿Qué quieres estudiar hoy?", df['Categoría'].unique())
-datos_filtrados = df[df['Categoría'] == categoria_select].reset_index(drop=True)
+categoria_select = st.sidebar.selectbox("¿Qué quieres estudiar hoy?", df['Categoria'].unique())
+datos_filtrados = df[df['Categoria'] == categoria_select].reset_index(drop=True)
 
 # --- LÓGICA DE ESTADO (IMPORTANTE) ---
-# Inicializamos el índice si no existe o si cambiamos de categoría
+# Inicializamos el índice si no existe o si cambiamos de categoria
 if 'indice' not in st.session_state or 'cat_anterior' not in st.session_state:
     st.session_state.indice = 0
     st.session_state.cat_anterior = categoria_select
